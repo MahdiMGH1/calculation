@@ -17,7 +17,6 @@ body{
     border-radius: 12px;
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    width: 35vw;
     
 }
 .display{
@@ -58,5 +57,5 @@ button:hover{
     padding: 0px 25px;
 }
 .mr{
-    margin-right: 4px;
+    margin: 0px 6px;
 }
