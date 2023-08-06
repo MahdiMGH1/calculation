@@ -14,10 +14,12 @@
         <div class="display">0</div>
         <div class="row">
             <button onclick="
-                getitems(``);
-                " class="big">C</button>
+                calculate='';
+                display();
+            " class="big">C</button>
+
             <button onclick="
-            getitems(``);
+            display();
             " class="mr">Mr</button>
             <button onclick="
             getitems(`/`);
@@ -73,7 +75,8 @@
             getitems(`.`);
             ">.</button>
             <button onclick="
-            getitems(`=`);
+               calculate=eval(calculate);
+                display();
             ">=</button>
     </div>
 

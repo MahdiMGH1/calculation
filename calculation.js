@@ -1,8 +1,23 @@
+function update(){
+    let mrvalue='';
+    mrvalue =localStorage.getItem('mr');
+    if (mrvalue===''){
+        mrvalue=0;
+    }
+    return mrvalue;
+}
+
+let calculate='';
 function getitems (num){
-    let calculate ;
-    let final;
-    calculate =+ `${num}`;
-    final= eval(calculate);
+    (calculate += num);
+    display();
     return calculate;
 }
-console.log(getitems());
+console.log(final);
+function display (){
+    document.querySelector('.display').innerHTML=calculate;
+    if(calculate===''){
+        document.querySelector('.display').innerHTML=0;
+    }
+}
+localStorage.setItem('mr',calculate);
